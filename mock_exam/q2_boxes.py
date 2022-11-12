@@ -27,3 +27,4 @@ rt(90)
 pd()
 
 draw_box(50, 150, 'red')
+done()

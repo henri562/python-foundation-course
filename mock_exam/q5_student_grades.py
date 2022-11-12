@@ -31,8 +31,9 @@ S9217 = ['Matthew Rodi', 74, 94]
 
 student = [S9002, S9014, S9026, S9121, S9165, S9199, S9200, S9217]
 
-l = 20
-print('Student Name'.ljust(l) + 'Mark'.ljust(l) + 'Grade')
+l = 18
+a = 10
+print('Student Name'.ljust(l) + 'Mark'.ljust(l - a) + 'Grade')
 for s in student:
     c_mark = calculate_course_mark(s)
-    print(s[0].ljust(l) + str(c_mark).ljust(l) + calculate_grade(c_mark, s[1], s[2]))
+    print(s[0].ljust(l) + str('%.2f' % c_mark).ljust(l - a) + calculate_grade(c_mark, s[1], s[2]))
